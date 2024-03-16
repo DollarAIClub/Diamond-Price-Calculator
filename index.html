@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="calculate.php" method="post">
+        <label><h1>Calculate your Diamond Price here</h1></label>
+    </br>
+        <label for="carat">Carat Weight:</label>
+        <input type="text" id="carat" name="carat" required><br>
+        <label for="cut">Cut:</label>
+        <select id="cut" name="cut">
+            <option value="1">Excellent</option>
+            <option value="0.9">Very Good</option>
+            <option value="0.8">Good</option>
+            <option value="0.7">Fair</option>
+            <option value="0.6">Poor</option>
+        </select><br>
+        
+        <label for="color">Color:</label>
+        <select id="color" name="color">
+            <option value="1">D</option>
+            <option value="0.95">E</option>
+            <option value="0.9">F</option>
+            <option value="0.85">G</option>
+            
+        </select><br>
+        
+        <label for="clarity">Clarity:</label>
+        <select id="clarity" name="clarity">
+            <option value="1.5">FL (Flawless)</option>
+            <option value="1.4">IF (Internally Flawless)</option>
+            <option value="1.3">VVS1 (Very Very Slightly Included 1)</option>
+            <option value="1.2">VVS1 (Very Very Slightly Included 1)</option>
+            <option value="1.1">VVS1 (Very Very Slightly Included 1)</option>
+        </select><br>
+        
+        <button type="submit">Calculate Price</button>
+    </form>
+</body>
+</html>
